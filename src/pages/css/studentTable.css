@@ -1,0 +1,112 @@
+
+@media (max-width: 768px) {
+  .leaderboard-container {
+    width: 100% !important;
+    padding: 0 12px !important;
+    height: auto !important;
+  }
+
+  .leaderboard-table {
+    width: 100% !important;
+    border: none !important;
+  }
+
+  .leaderboard-table thead {
+    display: none; 
+  }
+
+  .leaderboard-table tbody,
+  .leaderboard-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .leaderboard-table tr {
+    margin-bottom: 16px;
+    border: 1px solid #D2DFEB;
+    border-radius: 8px;
+    background-color: #F5F9FE;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; 
+  }
+
+  .leaderboard-table .default-row {
+    background-color: #EAF3FA !important;
+    border-radius: 8px;
+    margin-top: 16px;
+  }
+
+  .leaderboard-table td {
+    display: flex;
+    align-items: center;
+    text-align: left !important;
+    padding: 8px 0;
+    border: none !important;
+    width: 100%;
+  }
+
+  .leaderboard-table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 8px;
+    color: #333;
+    min-width: 80px; 
+  }
+
+  .leaderboard-table td[data-label="Rank"] {
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .leaderboard-table td[data-label="Student Name"] {
+    gap: 12px;
+  }
+
+  .leaderboard-table td[data-label="Overall Score"] div,
+  .leaderboard-table td[data-label="Overall Score"] {
+    width: 100px !important;
+    margin-left: 88px; 
+  }
+
+  .leaderboard-table td[data-label="Phy"],
+  .leaderboard-table td[data-label="Chem"],
+  .leaderboard-table td[data-label="Maths"],
+  .leaderboard-table td[data-label="Accuracy"] {
+    justify-content: flex-start;
+    margin-left: 88px; 
+  }
+
+  .leaderboard-table img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .leaderboard-table .font-inter {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .pagination-container {
+    width: 100% !important;
+    padding: 12px 0 !important;
+    position: relative;
+    background-color: #fff;
+  }
+}
+
+.leaderboard-container {
+  width: 1176px;
+  padding: 24px;
+}
+
+.leaderboard-table {
+  width: 1128px;
+  border: 1px solid #D2DFEB;
+  border-radius: 8px;
+}
+
+.pagination-container {
+  width: 1128px;
+  padding: 20px 12px;
+}
