@@ -2,10 +2,10 @@ import React from "react";
 import { Card } from "@/components/ui/card";
 import "./css/ToppersCard.css";
 import avatar from "../assets/avatar.png";
-import Vector1 from "../assets/vector1.png";
-import Vector2 from "../assets/vector2.png";
-import Vector3 from "../assets/vector3.png";
-import Vector4 from "../assets/vector4.png";
+import Vector1 from "../assets/Vector1.png";
+import Vector2 from "../assets/Vector2.png";
+import Vector3 from "../assets/Vector3.png";
+import Vector4 from "../assets/Vector4.png";
 import checks from "../assets/checks.png";
 import physics from "../assets/physics.png";
 import chemistry from "../assets/chemistry.png";
@@ -51,11 +51,13 @@ const ToppersCard = ({ gradient, student, darkMode }) => {
                         className="absolute top-[9px] left-[5px] w-[14px] h-[15px]"
                         alt="Vector3"
                     />
-                    <img
-                        src={Vector4}
-                        className="absolute top-[12px] left-[10px] w-[3px] h-[8px]"
-                        alt="Vector4"
-                    />
+                   <p
+  className="absolute top-[12px] left-[10px] w-[3px] h-[12px] text-[10px] font-bold"
+>
+  {student?.rank}
+</p>
+
+                
                 </div>
 
                 {/* Name + Rank Badge */}
